@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+
+  <link rel="icon" type="image/svg+xml" href="https://feeldreams.github.io/main-icon.png"> 
+  <link rel="apple-touch-icon" href="https://feeldreams.github.io/main-icon.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+<head>
+<title>Birthday</title>
+</head>
+<body>
+	
+   <div class="overlay">
+     <!-- Teks Loading --><div class="loading-message">Halo!<br>Tunggu dulu ya..</div>
+   </div>
+   
+   <!-- Ganti Audio di Sini, edit url di dalam src -->
+   <audio src="ANDMESH  - ANUGERAH TERINDAH (OFFICIAL MUSIC VIDEO).mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <!-- Pesan Pertama -->
+   <section class="first">
+       <!-- Background --><div class="wp"><img id="imgsatu" src="1.jpg"/></div>
+       <!-- Stiker --><img id="first_stiker" class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
+       
+       <h1 class="title">Assalamualaikum</h1>
+       <p class="flip">Halo gimana kabarnya sehatkan?
+        
+       </p>
+       <p class="slide-up">Coba geser kebawah deh</p>
+  </section>
+  
+  <!-- Pesan Kedua -->
+  <section>
+      <!-- Background --><div class="wp"><img id="imgdua" src="2.jpg"/></div>
+      <!-- Stiker --><img class="stiker fade-in" src="https://feeldreams.github.io/pusn.gif"/>
+      
+      <h2 class="title">Ada apa nieee...🤔🤨</h2>
+      <p class="slide-right">Coba geser lagi</p>
+  </section>
+  
+  <!-- Pesan Ketiga dengan Animasi Ngetik -->
+  <section>
+  	<!-- Background --><div class="wp"><img id="imgtiga" src="3.jpg"/></div>
+  
+    
+      <p id="teksnimasi">ميلادك سعيد🥳
+        Selamat 21! Cie, udah tua wkwkwk semoga di umur ini lebih berkah, lebih sehat, lebih lancar urusannya, lebih deket sm allah, aamiin..✨
+        Semoga mimpi2, cita2, keinginan, semua hal yang kamu inginkan allah kabulkan, aamiin..✨
+        Murojaah nya di kencengin, ibadahnya dikuatin, dzikir nya dikuatin, yaa😇
+        Jangan sedih kalau belum terkabul, karna belum tentu apa yang kita inginkan, bukan yg kita butuhkan, dan apa yang kita kira baik, belum tentu baik bagi allah, dan sebaliknya😇🙌
+        I wanna just say that i feel very lucky to meet you in my life, cz u like my parents, friend, brother, and everything💗
+        I know that you're not my world, but without you, my world is meaningless. 
+        Thank you for your presence is my life❤
+        그대는 선물입니다, 하늘이 내려준
+        홀로 선 세상 속에 그댈 지켜줄게요
+        어느 날 문득 소나기처럼 내린 그대지만
+        오늘도 불러 봅니다, 내겐 소중한 사람
+        (Yg Korea translate aja di google ya wkwk)
+        </p>
+  </section>
+  
+  <!-- Pesan Keempat dengan Pertanyaan -->
+  <section>
+  	<!-- Background --><div class="wp"><img id="imgempat" src="4.jpg"/></div>
+      <!-- Stiker --><img class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
+      
+      <h2 class="title">Akhirnya...</h2>
+      <p class="bold slide-right">Udah Bacanya?
+        Coba di tonton sedikit vidionya yah..😁<br><video controls muted autoplay loop class="vidio">
+          <source src="Video.mp4" type="video/mp4">
+      </p>
+      
+      <div id="Tombol">
+       <a id="By" onClick="fungsipertama()">Udah?</a>
+       <a id="Bn" onClick="fungsikedua()">Belom?</a>
+     </div>
+  </section>
+  
+  <!-- Pesan Akhir, edit di paling bawah di dalam Script -->
+  <section id="iniakhir">
+  	<!-- Background --><div class="wp" id="wpakhir"><img src="5.jpg"/></div>
+      <!-- Stiker --><img id="stikerakhir" class="stiker fade-in" src="https://feeldreams.github.io/g5.gif"/>
+      
+      <img id="stikerakhir2" style="display:none" src="birthday-cake.gif"/>
+      <h1 id="judulakhir"></h1>
+      <p id="kalimatakhir"></p>
+      <p id="palingakhir"></p>
+      <div id="TombolWA">
+        <a onClick="menuju()" href="https://wa.me/+6282218442850">Kesan Pesan </a>
+      </div>
+  </section>
+  
+  <div id="initom" class="menu">
+  <a class='tombol' onclick="tes()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> </svg>
+  </a>
+  </div>
+
+<script>
+// Teks ketika klik tombol Mau
+function fungsipertama(){
+       fungsi=0;tes();
+       teksjudulakhir = "Alhamdulillah";
+       tekskalimatakhir = "Thankyou yah... Babaiii";
+}
+
+// Teks ketika klik tombol Gamau
+function fungsikedua(){
+       fungsi=0;tes();
+       teksjudulakhir = "Bohong Pasti udahan";
+       tekskalimatakhir = "Thankyou Yah... byebye";
+}
+
+// Teks Akhir
+teksjudulakhir2 = "Be Yourself 😁";
+tekspalingakhir = "Assalamualaikum🙌 ";
+  
+
+// Teks yang akan dikirim ke WhatsApp
+pesanwhatsapp = "Makasih ya dhoo(agak dipaksa)";
+
+const body = document.querySelector("body"); initom.style="opacity:0;bottom:0;transition:none"; audio = new Audio('' + linkmp3.src); function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+</script>
+<script src="script.js"></script>
+</body>
+</html>
