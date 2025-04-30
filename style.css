@@ -313,3 +313,15 @@ svg {
     padding-bottom: 20px;
   }
 
+  @media (min-width: 768px) {
+    #teksnimasi {
+      font-size: large;
+      margin-top: -10px;
+      margin-left: 10px; /* Mengurangi margin kiri */
+      margin-right: 10px; /* Mengurangi margin kanan */
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+    
+  }
+
